@@ -1,5 +1,6 @@
 package com.codingforcookies.armorequip;
 
+import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Cancellable;
 import org.bukkit.event.HandlerList;
@@ -30,6 +31,14 @@ public final class ArmorEquipEvent extends PlayerEvent implements Cancellable{
 		this.type = type;
 		this.oldArmorPiece = oldArmorPiece;
 		this.newArmorPiece = newArmorPiece;
+	}
+	
+	public boolean isEquip() {
+		return this.getNewArmorPiece() != null && this.getNewArmorPiece().getType() != Material.AIR;
+	}
+	
+	public boolean isUnequip() {
+		return this.getOldArmorPiece() != null && this.getOldArmorPiece().getType() != Material.AIR;
 	}
 	
 	/**

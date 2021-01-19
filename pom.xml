@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.codingforcookies</groupId>
 	<artifactId>ArmorEquipEvent</artifactId>
-	<version>1.7.5</version>
+	<version>1.7.6</version>
 
 	<repositories>
 		<!-- This adds the Spigot Maven repository to the build -->
